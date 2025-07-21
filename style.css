@@ -77,3 +77,24 @@ footer {
 header, footer {
   border-color: var(--text-color);
 }
+
+.content-block {
+  max-width: 800px;
+  margin: 20px auto; /* Центрирование + отступ сверху и снизу */
+  padding: 20px;
+  border: 1px solid #222;
+  background-color: #fffdf8; /* Молочный фон */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+.content-block h1 {
+  margin-top: 0;
+  font-size: 2em;
+}
+
+.content-block video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
