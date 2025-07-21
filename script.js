@@ -1,1 +1,3 @@
-console.log("JavaScript работает!");
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("Page loaded successfully!");
+});
