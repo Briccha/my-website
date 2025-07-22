@@ -32,18 +32,37 @@
     </nav>
   </header>
 
-  <main>
-    <div class="content-block">
-      <h1>Hell0 There!</h1>
-      <p>This is my personal website, which I have created for my own purposes.</p>
-    </div>
-    <div class="content-block">
-      <video controls width="100%">
-        <source src="assets/ymeniya.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div>
-  </main>
+    <main class="profile-container">
+        <div class="content-block">
+            <section class="profile-header">
+                <img src="/assets/default-avatar.png" alt="Аватар" class="profile-avatar" />
+                <div class="profile-info">
+                    <h2>Имя пользователя</h2>
+                    <p>email@example.com</p>
+                </div>
+                <button class="edit-avatar-btn">Изменить аватар</button>
+            </section>
+        </div>
+
+        <div class="content-block">
+            <section class="profile-settings">
+                <h3>Настройки</h3>
+                <form>
+                    <!-- Пример полей -->
+                    <label>
+                        Имя:
+                        <input type="text" name="name" value="" />
+                    </label>
+                    <label>
+                        Email:
+                        <input type="email" name="email" value="" />
+                    </label>
+                    <!-- и так далее -->
+                    <button type="submit">Сохранить</button>
+                </form>
+            </section>
+        </div>
+    </main>
 
   <footer>
     <p>&copy; 2025 my portfolio site</p>
