@@ -1,0 +1,5 @@
+<!-- assets/logo.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 100 100" fill="black">
+  <circle cx="50" cy="50" r="45" stroke="black" stroke-width="5" fill="none"></circle>
+  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-size="20" font-family="sans-serif">PB</text>
+</svg>
