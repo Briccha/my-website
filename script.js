@@ -1,16 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
   console.log("Page loaded successfully!");
-});
 
-// === Preloader ===
-document.addEventListener("DOMContentLoaded", () => {
-  console.log("Page loaded successfully!");
+  // === Preloader
   const preloader = document.getElementById("preloader");
   if (preloader) {
-    preloader.classList.add("hidden");
+    setTimeout(() => {
+      preloader.classList.add("hidden");
+    }, 300);
   }
 
-  // === Theme Detection ===
+  // === Theme system preference
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   const savedTheme = localStorage.getItem('theme');
   if (savedTheme) {
@@ -19,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.documentElement.setAttribute('data-theme', 'dark');
   }
 
-  // === Toggle Theme Button ===
+  // === Theme toggle
   const toggleBtn = document.querySelector('.theme-toggle');
   if (toggleBtn) {
     toggleBtn.addEventListener('click', () => {
